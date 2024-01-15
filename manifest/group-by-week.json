@@ -1,0 +1,14 @@
+{
+    "fileLocations": [
+        {
+            "URIPrefixes": [
+                "s3://qiaoshi-aws-ml/tlc/results/full/avg_by_weekday/"
+            ]
+        }
+    ],
+    "globalUploadSettings": {
+        "format": "CSV",
+        "delimiter": ",",
+        "containsHeader": "true"
+    }
+}
