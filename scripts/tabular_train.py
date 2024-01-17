@@ -91,7 +91,9 @@ if __name__ == "__main__":
         test_data = TabularDataset(test_file)
 
         # Predictions
-        y_pred_proba = predictor.predict_proba(test_data)
+        # y_pred_proba = predictor.predict_proba(test_data)
+        # THERE IS A BUG here
+        y_pred_proba = predictor.predict(test_data)
         if config.get("output_prediction_format", "csv") == "parquet":
             y_pred_proba.to_parquet(f"{args.output_data_dir}/predictions.parquet")
         else:

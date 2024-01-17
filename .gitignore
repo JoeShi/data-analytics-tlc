@@ -3,7 +3,5 @@ pvre.ipynb
 .DS_Store
 .ipynb_checkpoints/*
 venv/*
-
 __pycache__/
-
-
+model.targ.gz
